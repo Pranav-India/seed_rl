@@ -1,0 +1,14 @@
+
+./run_local.sh [Game] [Agent] [number of actors] [number of envs. per actor]
+    game --> environment(our own environment) 
+    Agent --> IMPALA
+    number of actors
+    number of envs. per    
+
+inside docker folder run.sh
+    ACTOR_BINARY="CUDA_VISIBLE_DEVICES='' python3 ../${ENVIRONMENT}/${AGENT}_main.py --run_mode=actor";
+    LEARNER_BINARY="python3 ../${ENVIRONMENT}/${AGENT}_main.py --run_mode=learner";
+
+    Here the environment has to our (for IMPALA they have used dmlab)
+    Agent is vtrace(IMPALA) running modes are either actor or learner
+    
